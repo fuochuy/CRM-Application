@@ -13,11 +13,20 @@ import cybersoft.javabackend.util.UrlConst;
 
 
 @WebServlet(name = "homeServlet", urlPatterns = {
-		UrlConst.HOME,UrlConst.ALERTS,UrlConst.BUTTON,UrlConst.AVATARS,UrlConst.CHARTS,
-		UrlConst.DATETIME,UrlConst.DRAG,UrlConst.FORMS,UrlConst.ICONS,UrlConst.LOADER,
-		UrlConst.MODALS,UrlConst.PAGINATION,UrlConst.RANGE,UrlConst.TABLE,
-		UrlConst.TABS, UrlConst.VECTOR,UrlConst.ACCOUNT_EDIT, UrlConst.APP_TRELLO,
-		UrlConst.FULL_CALENDAR,UrlConst.PROFILE
+		UrlConst.HOME,
+		
+		UrlConst.ALERTS,UrlConst.BUTTON,UrlConst.AVATARS,UrlConst.CHARTS,UrlConst.DATETIME,
+		UrlConst.DRAG,UrlConst.FORMS,UrlConst.ICONS,UrlConst.LOADER,UrlConst.MODALS,
+		UrlConst.PAGINATION,UrlConst.RANGE,UrlConst.TABLE, UrlConst.TABS, UrlConst.VECTOR,
+		
+		UrlConst.ACCOUNT_EDIT, UrlConst.APP_TRELLO,UrlConst.FULL_CALENDAR,UrlConst.PROFILE,UrlConst.LOGIN,
+		
+		UrlConst.MANAGE, UrlConst.CREATE,
+		
+		UrlConst.USERLIST, UrlConst.CREATEUSER,
+		
+		UrlConst.TASK
+		
 })
 public class Home extends HttpServlet {
 	
@@ -29,15 +38,14 @@ public class Home extends HttpServlet {
 		case UrlConst.HOME:
 			req.getRequestDispatcher(JspConst.HOME).forward(req, resp);
 			break;
+			
 		case UrlConst.BUTTON:
 			req.getRequestDispatcher(JspConst.BUTTON).forward(req, resp);
 			break;
 		case UrlConst.ALERTS:
-			System.out.println(path);
 			req.getRequestDispatcher(JspConst.ALERTS).forward(req, resp);
 			break;
 		case UrlConst.AVATARS:
-			System.out.println(path);
 			req.getRequestDispatcher(JspConst.AVATARS).forward(req, resp);
 			break;
 		case UrlConst.CHARTS:
@@ -52,21 +60,19 @@ public class Home extends HttpServlet {
 		case UrlConst.FORMS:
 			req.getRequestDispatcher(JspConst.FORMS).forward(req, resp);
 			break;
-		case UrlConst.ICONS:
+		case UrlConst.ICONS:	
 			req.getRequestDispatcher(JspConst.ICONS).forward(req, resp);
 			break;
 		case UrlConst.LOADER:
 			req.getRequestDispatcher(JspConst.LOADER).forward(req, resp);
 			break;
 		case UrlConst.MODALS:
-			System.out.println(path);
 			req.getRequestDispatcher(JspConst.MODALS).forward(req, resp);
 			break;
 		case UrlConst.PAGINATION:
 			req.getRequestDispatcher(JspConst.PAGINATION).forward(req, resp);
 			break;
 		case UrlConst.RANGE:
-			System.out.println(path);
 			req.getRequestDispatcher(JspConst.RANGE).forward(req, resp);
 			break;
 		case UrlConst.TABLE:
@@ -78,6 +84,7 @@ public class Home extends HttpServlet {
 		case UrlConst.VECTOR:
 			req.getRequestDispatcher(JspConst.VECTOR).forward(req, resp);
 			break;
+			
 		case UrlConst.ACCOUNT_EDIT:
 			req.getRequestDispatcher(JspConst.ACOUNT_EDIT).forward(req, resp);
 			break;
@@ -89,6 +96,27 @@ public class Home extends HttpServlet {
 			break;
 		case UrlConst.PROFILE:
 			req.getRequestDispatcher(JspConst.PROFILE).forward(req, resp);
+			break;
+		case UrlConst.LOGIN:
+			req.getRequestDispatcher(JspConst.LOGIN).forward(req, resp);
+			break;
+			
+		case UrlConst.MANAGE:
+			req.getRequestDispatcher(JspConst.MANAGE).forward(req, resp);
+			break;
+		case UrlConst.CREATE:
+			req.getRequestDispatcher(JspConst.CREATE).forward(req, resp);
+			break;
+			
+		case UrlConst.USERLIST:
+			req.getRequestDispatcher(JspConst.USERLIST).forward(req, resp);
+			break;
+		case UrlConst.CREATEUSER:
+			req.getRequestDispatcher(JspConst.CREATEUSER).forward(req, resp);
+			break;
+			
+		case UrlConst.TASK:
+			req.getRequestDispatcher(JspConst.TASK).forward(req, resp);
 			break;
 		default: break;
 		

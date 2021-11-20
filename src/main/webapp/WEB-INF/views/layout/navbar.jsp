@@ -20,11 +20,11 @@
                                Project
                            </a>
                            <div class="dropdown-menu">
-                               <a class="dropdown-item" href="#">
+                               <a class="dropdown-item" href="manage">
                                    Manage Project
                                </a>
-                               <a class="dropdown-item" href="#">
-                                   Project Create Project
+                               <a class="dropdown-item" href="create">
+                                   Create Project
                                </a>
                            </div>
                        </li>
@@ -33,16 +33,16 @@
                                User
                            </a>
                            <div class="dropdown-menu">
-                               <a class="dropdown-item" href="#">
+                               <a class="dropdown-item" href="userlist">
                                    User List
                                </a>
-                               <a class="dropdown-item" href="#">
+                               <a class="dropdown-item" href="createuser">
                                    Create User
                                </a>
                            </div>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="#">Task</a>
+                           <a class="nav-link" href="task">Task</a>
                        </li>
                        <li class="nav-item dropdown">
                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Components</a>

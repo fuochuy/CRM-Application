@@ -18,11 +18,11 @@
                          <li class="breadcrumb-item"><a href="#">Home</a></li>
                          <li class="breadcrumb-item"><a href="#">Components</a></li>
                          <li class="breadcrumb-item active" aria-current="page">
-                             Dashboard
+                             Modals
                          </li>
                      </ol>
                  </nav>
-                 <h1 class="m-0">Dashboard</h1>
+                 <h1 class="m-0">Modals</h1>
              </div>
              <div class="ml-auto">
                  <a href="" class="btn btn-light"><i class="material-icons icon-16pt text-muted mr-1">settings</i>
