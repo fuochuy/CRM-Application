@@ -8,9 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cybersoft.javabackend.util.JspConst;
-import cybersoft.javabackend.util.UrlConst;
-
+import cybersoft.javabackend.crm.util.JspConst;
+import cybersoft.javabackend.crm.util.UrlConst;
 
 @WebServlet(name = "homeServlet", urlPatterns = {
 		UrlConst.HOME,
@@ -23,13 +22,12 @@ import cybersoft.javabackend.util.UrlConst;
 		
 		UrlConst.MANAGE, UrlConst.CREATE,
 		
-		UrlConst.USERLIST, UrlConst.CREATEUSER,
-		
 		UrlConst.TASK
 		
 })
-public class Home extends HttpServlet {
+public class HomeServlet extends HttpServlet{
 	
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String path = req.getServletPath();
@@ -106,13 +104,6 @@ public class Home extends HttpServlet {
 			break;
 		case UrlConst.CREATE:
 			req.getRequestDispatcher(JspConst.CREATE).forward(req, resp);
-			break;
-			
-		case UrlConst.USERLIST:
-			req.getRequestDispatcher(JspConst.USERLIST).forward(req, resp);
-			break;
-		case UrlConst.CREATEUSER:
-			req.getRequestDispatcher(JspConst.CREATEUSER).forward(req, resp);
 			break;
 			
 		case UrlConst.TASK:
