@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/java/cybersoft/javabackend/crm/filter/AuthFilter.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/crm/filter/EncodingFilter.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/crm/repository/UserRepository.java=UTF-8
 encoding//src/main/webapp/WEB-INF/views/layout/topbar.jsp=UTF-8
