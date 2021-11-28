@@ -2,6 +2,12 @@
 
 	<decorators defaultdir="/decorators">
 		<decorator name="web" page="layout.jsp">
-			<pattern>/*</pattern>
+			<pattern>/home</pattern>
+			<pattern>/profile</pattern>
+			<pattern>/acount-edit</pattern>
+			<pattern>/full-calendar</pattern>
+			<pattern>/buttons</pattern>
+			<pattern>/userlist</pattern>
+			<pattern>/createuser</pattern>
 		</decorator>
 	</decorators>

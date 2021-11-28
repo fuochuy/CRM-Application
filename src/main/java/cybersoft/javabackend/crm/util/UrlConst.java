@@ -29,6 +29,8 @@ public class UrlConst {
 	public static final String APP_TRELLO="/app-trello";
 	public static final String PROFILE="/profile";
 	public static final String LOGIN="/login";
+	public static final String FORGOTPS="/fotgotpassword";
+	public static final String SIGNUP="/signup";
 	
 	/*Project*/
 	public static final String MANAGE="/manage";
@@ -37,6 +39,7 @@ public class UrlConst {
 	/*User*/
 	public static final String USERLIST="/userlist";
 	public static final String CREATEUSER="/createuser";
+	public static final String DELETEUSER="/deleteuser";
 	
 	/*Task*/
 	public static final String TASK="/task";

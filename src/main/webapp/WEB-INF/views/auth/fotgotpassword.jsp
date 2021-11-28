@@ -38,14 +38,14 @@
             </a>
         </div>
 
-        <h4 class="m-0">Welcome back!</h4>
-        <p class="mb-5">Login to access your account </p>
+        <h4 class="m-0">Password update</h4>
+        
 
-        <form action="login"  method="post">
+        <form action="fotgotpassword"  method="post">
             <div class="form-group">
-                <label class="text-label" for="email">Email Address:</label>
+                <label class="text-label" for="email_1">Email Address:</label>
                 <div class="input-group input-group-merge">
-                    <input id="email" type="email" name="email" required="" class="form-control form-control-prepended" placeholder="john@doe.com">
+                    <input id="email_1" type="email" name="email_1" required="" class="form-control form-control-prepended" placeholder="john@doe.com">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
                             <span class="far fa-envelope"></span>
@@ -54,9 +54,9 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="text-label" for="password">Password:</label>
+                <label class="text-label" for="password_1">Your new password:</label>
                 <div class="input-group input-group-merge">
-                    <input id="password" type="password" name="password" required="" class="form-control form-control-prepended" placeholder="Enter your password">
+                    <input id="password_1" type="password" name="password_1" required="" class="form-control form-control-prepended" placeholder="Enter your password">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
                             <span class="fa fa-key"></span>
@@ -64,15 +64,8 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group mb-5">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" checked="" id="remember">
-                    <label class="custom-control-label" for="remember">Remember me</label>
-                </div>
-            </div>
             <div class="form-group text-center">
-                <button class="btn btn-primary mb-5" type="submit">Login</button><br>
-                <a href=<%=request.getContextPath()+"/fotgotpassword" %>>Forgot password?</a> <br> Don't have an account? <a class="text-body text-underline" href=<%=request.getContextPath() +"/signup" %> >Sign up!</a>
+                <button class="btn btn-primary mb-5" type="submit">Confirm</button><br>
             </div>
         </form>
     </div>
@@ -80,7 +73,6 @@
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
-
     <!-- Bootstrap -->
     <script src="assets/vendor/popper.min.js"></script>
     <script src="assets/vendor/bootstrap.min.js"></script>

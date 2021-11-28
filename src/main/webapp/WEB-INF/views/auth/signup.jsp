@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login</title>
+    <title>Signup</title>
 
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
 
@@ -26,26 +26,37 @@
     <!-- Font Awesome FREE Icons -->
     <link type="text/css" href="assets/css/vendor-fontawesome-free.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-fontawesome-free.rtl.css" rel="stylesheet">
+
 </head>
 
 <body class="layout-login">
-
     <div class="layout-login__overlay"></div>
     <div class="layout-login__form bg-white" data-perfect-scrollbar>
         <div class="d-flex justify-content-center mt-2 mb-5 navbar-light">
             <a href="index.html" class="navbar-brand" style="min-width: 0">
-                <img class="navbar-brand-icon" src="assets/images/logo.png" width="250" alt="Stack">
+                <img class="navbar-brand-icon" src="assets/images/logo.png" width="250" alt="Cybersoft">
             </a>
         </div>
 
-        <h4 class="m-0">Welcome back!</h4>
-        <p class="mb-5">Login to access your account </p>
+        <h4 class="m-0">Sign up!</h4>
+        <p class="mb-5">Create an account now!</p>
 
-        <form action="login"  method="post">
+        <form action="signup"  method="post">
             <div class="form-group">
-                <label class="text-label" for="email">Email Address:</label>
+                <label class="text-label" for="name_2">Name:</label>
                 <div class="input-group input-group-merge">
-                    <input id="email" type="email" name="email" required="" class="form-control form-control-prepended" placeholder="john@doe.com">
+                    <input id="name_2" type="text" name="name_2" required="" class="form-control form-control-prepended" placeholder="John Doe">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <span class="far fa-user"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="text-label" for="email_2">Email Address:</label>
+                <div class="input-group input-group-merge">
+                    <input id="email_2" name="email_2" type="email" required="" class="form-control form-control-prepended" placeholder="john@doe.com">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
                             <span class="far fa-envelope"></span>
@@ -54,25 +65,25 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="text-label" for="password">Password:</label>
+                <label class="text-label" for="password_2">Password:</label>
                 <div class="input-group input-group-merge">
-                    <input id="password" type="password" name="password" required="" class="form-control form-control-prepended" placeholder="Enter your password">
+                    <input id="password_2" name="password_2" type="password" required="" class="form-control form-control-prepended" placeholder="Enter your password">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
-                            <span class="fa fa-key"></span>
+                            <span class="far fa-key"></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="form-group mb-5">
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" checked="" id="remember">
-                    <label class="custom-control-label" for="remember">Remember me</label>
+                    <input type="checkbox" checked="" class="custom-control-input" id="terms" />
+                    <label class="custom-control-label" for="terms">I accept <a href="#">Terms and Conditions</a></label>
                 </div>
             </div>
             <div class="form-group text-center">
-                <button class="btn btn-primary mb-5" type="submit">Login</button><br>
-                <a href=<%=request.getContextPath()+"/fotgotpassword" %>>Forgot password?</a> <br> Don't have an account? <a class="text-body text-underline" href=<%=request.getContextPath() +"/signup" %> >Sign up!</a>
+                <button class="btn btn-primary mb-2" type="submit">Create Account</button><br>
+                <a class="text-body text-underline" href="login">Have an account? Login</a>
             </div>
         </form>
     </div>
@@ -103,10 +114,6 @@
 
     <!-- App Settings (safe to remove) -->
     <script src="assets/js/app-settings.js"></script>
-
-
-
-
 
 </body>
 

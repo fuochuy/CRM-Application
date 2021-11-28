@@ -30,8 +30,8 @@
                 <!-- Page Content -->
                 <div class="row">
                     <div class="col-lg-3">
-                        <h1 class="h4 mb-1">Phan Thanh Tuấn</h1>
-                        <p class="text-muted">@TuanPhan</p>
+                        <h1 class="h4 mb-1"><%=session.getAttribute("fullname") %></h1>
+                        <p class="text-muted"><%=session.getAttribute("nickname") %></p>
                         <p>CRM Admin Template</p>
                         <div class="text-muted d-flex align-items-center">
                             <i class="material-icons mr-1">location_on</i>
@@ -55,7 +55,7 @@
                                             </div>
                                             <div class="flex">
                                                 <div class="d-flex align-items-center mb-1">
-                                                    <strong class="text-15pt">Phan Thanh Tuấn</strong>
+                                                    <strong class="text-15pt"><%=session.getAttribute("fullname") %></strong>
                                                     <small class="ml-2 text-muted">3 days ago</small>
                                                 </div>
                                                 <div>
@@ -80,7 +80,7 @@
                                             </div>
                                             <div class="flex">
                                                 <div class="d-flex align-items-center mb-1">
-                                                    <strong class="text-15pt">Phan Thanh Tuấn</strong>
+                                                    <strong class="text-15pt"><%=session.getAttribute("fullname") %></strong>
                                                     <small class="ml-2 text-muted">4 days ago</small>
                                                 </div>
                                                 <div>

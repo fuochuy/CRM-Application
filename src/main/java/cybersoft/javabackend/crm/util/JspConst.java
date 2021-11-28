@@ -26,6 +26,8 @@ public class JspConst {
 	public static final String APP_TRELLO="/WEB-INF/views/project/app-trello.jsp";
 	public static final String PROFILE="/WEB-INF/views/auth/profile.jsp";
 	public static final String LOGIN="/WEB-INF/views/auth/login.jsp";
+	public static final String FORGOTPS="/WEB-INF/views/auth/fotgotpassword.jsp";
+	public static final String SIGNUP="/WEB-INF/views/auth/signup.jsp";
 
 	/*Project*/
 	public static final String MANAGE="/WEB-INF/views/project/manage.jsp";

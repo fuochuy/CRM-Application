@@ -1,4 +1,4 @@
-/*package cybersoft.javabackend.crm.filter;
+package cybersoft.javabackend.crm.filter;
 
 import java.io.IOException;
 
@@ -11,10 +11,11 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import cybersoft.javabackend.util.UrlConst;
+import cybersoft.javabackend.crm.util.UrlConst;
+
 
 @WebFilter(urlPatterns = {
-		UrlConst.ROOT
+		UrlConst.HOME
 })
 public class AuthFilter implements Filter{
 
@@ -38,4 +39,4 @@ public class AuthFilter implements Filter{
 		
 	}
 
-}*/
+}

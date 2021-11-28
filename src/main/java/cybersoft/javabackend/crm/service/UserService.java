@@ -16,5 +16,15 @@ private UserRepository repository;
 		
 		return repository.getUsers();
 	}
+	public boolean updatePassword(String email, String password) {
+		return repository.updatePassword(email, password) ==1 ? true :false;
+	}
+	public boolean addUser(User user) {
+		return repository.addUser(user) == 1? true:false;
+	}
+	
+	public boolean deleteUser(int id) {
+		return repository.deleteUser(id) == 1? true:false;
+	}
 
 }

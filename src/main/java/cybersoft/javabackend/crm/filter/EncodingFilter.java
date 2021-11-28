@@ -1,3 +1,4 @@
+
 package cybersoft.javabackend.crm.filter;
 
 import java.io.IOException;
@@ -25,11 +26,11 @@ public class EncodingFilter implements Filter{
 		HttpServletRequest req = (HttpServletRequest) request;
 		HttpServletResponse resp = (HttpServletResponse) response;
 		
-		/* code được thực hiện khi nhận request */
+		
 		req.setCharacterEncoding("UTF-8");
 		
 		chain.doFilter(req, resp);
-		/* code được thực hiện khi trả response */
+		
 		resp.setCharacterEncoding("UTF-8");
 		
 	}
@@ -37,3 +38,4 @@ public class EncodingFilter implements Filter{
 	
 	
 }
+

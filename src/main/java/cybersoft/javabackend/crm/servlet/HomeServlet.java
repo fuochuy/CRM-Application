@@ -18,7 +18,7 @@ import cybersoft.javabackend.crm.util.UrlConst;
 		UrlConst.DRAG,UrlConst.FORMS,UrlConst.ICONS,UrlConst.LOADER,UrlConst.MODALS,
 		UrlConst.PAGINATION,UrlConst.RANGE,UrlConst.TABLE, UrlConst.TABS, UrlConst.VECTOR,
 		
-		UrlConst.ACCOUNT_EDIT, UrlConst.APP_TRELLO,UrlConst.FULL_CALENDAR,UrlConst.PROFILE,UrlConst.LOGIN,
+		UrlConst.ACCOUNT_EDIT, UrlConst.APP_TRELLO,UrlConst.FULL_CALENDAR,UrlConst.PROFILE,
 		
 		UrlConst.MANAGE, UrlConst.CREATE,
 		
@@ -95,9 +95,7 @@ public class HomeServlet extends HttpServlet{
 		case UrlConst.PROFILE:
 			req.getRequestDispatcher(JspConst.PROFILE).forward(req, resp);
 			break;
-		case UrlConst.LOGIN:
-			req.getRequestDispatcher(JspConst.LOGIN).forward(req, resp);
-			break;
+		
 			
 		case UrlConst.MANAGE:
 			req.getRequestDispatcher(JspConst.MANAGE).forward(req, resp);
