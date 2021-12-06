@@ -1,2 +1,11 @@
 eclipse.preferences.version=1
-encoding//src/main/webapp/WEB-INF/views/layout/topbar.jsp=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/filter/EncodingFilter.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/repository/ProjectRepository.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/repository/RoleRepository.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/repository/StatusRepository.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/repository/TaskRepository.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/repository/UserRepository.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/servlet/AuthServlet.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/servlet/ProjectServlet.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/servlet/TaskServlet.java=UTF-8
+encoding//src/main/java/cybersoft/javabackend/java14/crm/servlet/UserServlet.java=UTF-8
